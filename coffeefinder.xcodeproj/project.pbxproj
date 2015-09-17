@@ -12,7 +12,6 @@
 		93CDC5951BAB028700A64733 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CDC5941BAB028700A64733 /* ViewController.m */; };
 		93CDC5981BAB028700A64733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CDC5961BAB028700A64733 /* Main.storyboard */; };
 		93CDC59A1BAB028700A64733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93CDC5991BAB028700A64733 /* Assets.xcassets */; };
-		93CDC59D1BAB028700A64733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CDC59B1BAB028700A64733 /* LaunchScreen.storyboard */; };
 		93CDC5A81BAB028700A64733 /* coffeefinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CDC5A71BAB028700A64733 /* coffeefinderTests.m */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +34,6 @@
 		93CDC5941BAB028700A64733 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		93CDC5971BAB028700A64733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93CDC5991BAB028700A64733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		93CDC59C1BAB028700A64733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93CDC59E1BAB028700A64733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93CDC5A31BAB028700A64733 /* coffeefinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coffeefinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CDC5A71BAB028700A64733 /* coffeefinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coffeefinderTests.m; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				93CDC5941BAB028700A64733 /* ViewController.m */,
 				93CDC5961BAB028700A64733 /* Main.storyboard */,
 				93CDC5991BAB028700A64733 /* Assets.xcassets */,
-				93CDC59B1BAB028700A64733 /* LaunchScreen.storyboard */,
 				93CDC59E1BAB028700A64733 /* Info.plist */,
 				93CDC58D1BAB028600A64733 /* Supporting Files */,
 			);
@@ -191,7 +188,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93CDC59D1BAB028700A64733 /* LaunchScreen.storyboard in Resources */,
 				93CDC59A1BAB028700A64733 /* Assets.xcassets in Resources */,
 				93CDC5981BAB028700A64733 /* Main.storyboard in Resources */,
 			);
@@ -242,14 +238,6 @@
 				93CDC5971BAB028700A64733 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		93CDC59B1BAB028700A64733 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				93CDC59C1BAB028700A64733 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -341,10 +329,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = coffeefinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyngby.coffeefinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -352,10 +343,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = coffeefinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyngby.coffeefinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -402,6 +396,7 @@
 				93CDC5AE1BAB028700A64733 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93CDC5AF1BAB028700A64733 /* Build configuration list for PBXNativeTarget "coffeefinderTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +405,7 @@
 				93CDC5B11BAB028700A64733 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
