@@ -37,6 +37,8 @@ NSString * const kLocation = @"location";
                               kKey, parameters[kKey],
                               kLocation, [latitudeNumber doubleValue], [longitudeNumber doubleValue],
                               kRadius, parameters[kRadius]];
+    
+    NSLog(@"%@", nearbyString);
     return [NSURL URLWithString:nearbyString];
 }
 

@@ -60,7 +60,7 @@
 }
 
 - (void)testFullURL {
-    NSString *compareURL = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=%@&location=%f,%f&radius=%d", @"API_KEY", 50.0, -50.0, 10];
+    NSString *compareURL = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=%@&location=%f,%f&radius=%d&name=coffee", @"API_KEY", 50.0, -50.0, 10];
     
     NSURL *nearbyPlacesURL = [PlacesURLBuilder nearbyPlacesURLWithParams:@{kKey : @"API_KEY",
                                                                            kLatitude : @(50),

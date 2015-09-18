@@ -62,6 +62,9 @@
 #pragma mark - MKMapViewDelegate
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+    if ([annotation isKindOfClass:[MKUserLocation class]]) {
+        return nil;
+    }
     MKPinAnnotationView *annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"annotationId"];
     annotationView.pinTintColor = [UIColor colorWithRed:48.0/255.0 green:135.0/255.0 blue:62.0/255.0 alpha:1.0];
     annotationView.animatesDrop = YES;

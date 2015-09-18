@@ -47,11 +47,11 @@
         XCTAssertEqual(20, results.count);
         
         PlaceResult *firstResult = [results firstObject];
-        XCTAssertNotNil(firstResult.name);
-        XCTAssertTrue(firstResult.location.latitude != 0);
-        XCTAssertTrue(firstResult.location.longitude != 0);
+        XCTAssertNotNil(firstResult.title);
+        XCTAssertTrue(firstResult.coordinate.latitude != 0);
+        XCTAssertTrue(firstResult.coordinate.longitude != 0);
         XCTAssertNotNil(firstResult.placeId);
-        XCTAssertNotNil(firstResult.vicinity);
+        XCTAssertNotNil(firstResult.subtitle);
         
         [completionExpection fulfill];
     }];
