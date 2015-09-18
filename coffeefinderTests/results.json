@@ -1,0 +1,549 @@
+{
+   "html_attributions" : [],
+   "next_page_token" : "CoQC9AAAAFyjrS4EbrvWVx76H749xoL-rpFlgcKATrfuil4NJikgjwvPsrQs4tpVi8f7drxyDVI-nXR9hAINfSPGIn1mE34wze1mOKEIa45SsP4dPoy4aaNzJ711za_L_eKdNmiMwV6O9IYwlQh4YVWrKyFeI-6tosHOZurvt-qI2wGkznLHJPQoNvix-CKlu4Jspl_wn9P5x9_kLj5N0-tiO9jAJWdJpJ32NzEfq9DAIWg1kt6DSoOp2Nk8aawgIQy-G00VcTm7QtOUjDPCbismK0YIxZOCuMDdC3VVcjEjfP9csiVCf3p8Be2rfinBfO6H6eu5WVumO7SNGCbx7TY1eGg4G1ASELVyF2PJlMMOg0wGJKPO_w8aFJpYao5DJJEHrakAz_1-gUxMFw7R",
+   "results" : [
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.948397,
+               "lng" : -93.092629
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "53313ceae955d9af3be9ed111613b3accccc6e48",
+         "name" : "Caribou Coffee",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJCa5i0E3V94cRjm7ARjpkfZo",
+         "price_level" : 1,
+         "reference" : "CnRiAAAAeffmhmll_Ano2860IqL-sckgJIoGA-cw6rML6RtTr_PeVWhltwlKe-lOfGhV__TJwpDr5cKXl3YlJV3VihYCzivtKs28r_rCbLMofplFVUnd_UBzYhwCWa8ynDS0iQ0qy6DP65i2Ndzh_iQG-FwECxIQzUmbuRoyIbL-j9E2JC99hhoU5J5ECrmPaSEc24LWiLAdcMjpP90",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "401 Robert Street North, Saint Paul"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.957473,
+               "lng" : -93.277682
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "08c4c7c5f3097579b7f93d5850c672648270cdfc",
+         "name" : "Spyhouse Coffee",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 768,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/109279178116230589654\"\u003eMigdalia Guzman\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRdAAAANooaqf9JIdQ3RcvkykKgR3_mEyiquD-wism-nbiZjGwISFQwOdxpelVkwIFWhQE0aQNmsDZX2s6zmN_dMqdCOm56df9fzbICe3QHCQW9lNT570YZykRWAkNw2XJqfJehEhCJa50iMJdBl-6nVA-vsryaGhRXjUdVWsuSMjx-dmlNSo9GnkNZ8A",
+               "width" : 1280
+            }
+         ],
+         "place_id" : "ChIJ9w_D4LUys1IRk9DLmk72ga4",
+         "price_level" : 1,
+         "rating" : 3.7,
+         "reference" : "CnRjAAAA0rPnBjPtHZLieWXAHlZ1yyHygVwA_ebmJt_W61SHHhsUinkVxFIfJSXq-8ejFUmjDKJs9Hx4qucdp1e-rNw0OxKsk_voUQwEAIMFn9Uh-DWOHH_lnlgJO9cWgZs2IDpV862oMfoaGo0tfBoVJncJdxIQYm031nDrSNuzMKBYfJqvsxoUegeN8spFwx797ZNU8YQDoGPy6Cs",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "2451 Nicollet Avenue South, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.955677,
+               "lng" : -93.277659
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "57b27dddbde44abb127279c03c5f8b231767705f",
+         "name" : "Bad Waitress Coffee Shop",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 1052,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/117820396754940120347\"\u003eMary Hancy\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRdAAAA9ptVEDlaN0uX_wPXtU7AYsxao_bUSyCi00qxvnXDwgDL0W-eagCzoVEELWmKZ3k6KZYm0eu4D1qy_UJ8Kf1JEtBN2pHv8B633-6W_A9jkLQdBJ-W7dMyRi25PO-NSB8KEhBC6jb_ZbU0nSzdTOElLP7LGhRnQZK4M5PVI83aS9QYw1W5GenQnQ",
+               "width" : 780
+            }
+         ],
+         "place_id" : "ChIJnTywWLQys1IRkNxuj8Iz0xs",
+         "rating" : 3.6,
+         "reference" : "CnRrAAAAplX5Cw8M4DVnt0h7OqB6DeJIZBAizApDtJzaM0BBU5Td6qBrM90pmN0C4UUuTqrFwqdpP7_TIsTRiNzrfGImZ8nxwj4ldg5-SxfAmYkafqGrlZBwZgYL2yKq0v0mzRLs1XnY9ajVLyi0fYC_mUgO4xIQabNLQgRmlthMPE7R2pXL1RoUSgSNl9qCP1W3rL_HFhc-i-Rtp_4",
+         "scope" : "GOOGLE",
+         "types" : [
+            "cafe",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "vicinity" : "2 East 26th Street, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.967781,
+               "lng" : -93.28378600000001
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "95bd988d7715bead681977106fa700fd7c15d4ba",
+         "name" : "Dunn Bros Coffee",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 864,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/118402611438180245983\"\u003eMorgan James\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRdAAAA5xeeqr-AtqFQvQfkFltHQ9mLs_TfIPQDOJ3xJGSp-bbh4XHyREgMfqCFctoGwDMGSpyBSp98EjbxnFzWD00QosPABO7lwsE9rUsP0dc8EB8CoPCsO7fxNG5FkTjyVXuQEhCClHx5c9OU4EJiZxPj5YWQGhTXY5ycCE_FdGDMPcsS6ACDfMwQTA",
+               "width" : 1296
+            }
+         ],
+         "place_id" : "ChIJc7OyPsEys1IROH5FV88B4MA",
+         "price_level" : 1,
+         "rating" : 4.5,
+         "reference" : "CnRkAAAAMnF1zIwiwHj0YL_kLpwFAdwroEpGORwy-wGFT61a3Llc7B78n4SnkaYVQlDDSi5idVxwzeKTmBlxb3cay-Uu6JJ7taDkufsJNfmvapu341gY6NI-8ru0gxwog_Y_gXSAv4JXqP4uFUrTx5QyR-Xy4RIQafqUEe9tpX5VbtSTQBQC0RoUZCuavQfjoCWtGraISmQnyt9rHP8",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "329 West 15th Street, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.961058,
+               "lng" : -93.288566
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "a32c5d4694057ce34a2c25c476d19e54f1d45889",
+         "name" : "Caffetto Coffee House",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJV0IZ6s8ys1IRIcqYn23Faxw",
+         "price_level" : 1,
+         "rating" : 4.6,
+         "reference" : "CnRoAAAAYJIHPqJJGjq2aT_XPXZYtAgYKX91mqXMuPofev2rUo9VjJng0kWldv8sXDT-GX06YZJrd_WwGN-Jtm32axjr4aeC1axq9Ql4Dry_js9g_xCEDKL613sPcfTRFFssMcHFmeLBKRelBzJLv58LaVH9sxIQRsQ_onbMUJp4UOo1BQ2cNhoUlcffVMNJhdh7-9s_NQ_r52nV3PM",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "708 West 22nd Street, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.978377,
+               "lng" : -93.261072
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "9f34382a1c78542544fa1de2a35282e1d64c788c",
+         "name" : "Caribou Coffee",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJk4z6iZ0ys1IR7S8P0FTjjfI",
+         "price_level" : 1,
+         "rating" : 3.9,
+         "reference" : "CnRiAAAAkkgZS5S2ZCTg-MoQm5no6OmMFy2stm2iydBUzviglL8BvLlQETkF3D0Tjj8OvkF3DUIOKtCyCtBgJKnPdpirOcyNFQDfEZSzlOvCmKnYk0_vo8K2tRFsV2MXvDlv_NInozRrjZ5tYRQmdE3onkNAfhIQ8KM_fWzbkNpHsHAY1jLycRoU8kWYsnVUesoAJ2Hs6N99Lm70UQM",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "501 South Washington Avenue, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.948548,
+               "lng" : -93.216748
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "59e6e22063e2a8661834adf8db5ae81ab06d7b9b",
+         "name" : "Blue Moon Coffee Cafe",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 1536,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/118018032815498653348\"\u003eChristopher Lewis\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRdAAAAXwJwkfOB5RoV9mvQ9hCkleHPZTiaxKBBZSWUYVwAewiQsVOKsUUXiQ8kXTxKhNe9MEwjKik1iO7lg7_-mM7NHjm2MvenleNJHBV1b62qIFKaz88XV9_UHMv3MBCeWW6kEhBSy9GFoeVWSZffbGHCOSMkGhR69OFKHnv71yB8FUZvQacoYfk45g",
+               "width" : 2048
+            }
+         ],
+         "place_id" : "ChIJu6yoF9Mp9ocRJ0p7EGDZY6k",
+         "price_level" : 1,
+         "rating" : 4.4,
+         "reference" : "CnRpAAAACnI7Ku6vleXBhhyC8TbQDeozDQwU7yCOIadFg4cSEn_PgmTWIcsfSSG5L6y0Z6RIZu_LaeOlc4LGa-alYUzs3lAbd2dEvV45wTkeUyHb8VIvnCmTvIXSxlEcccI7z6iLdrNxVAwNMXj-3Rnybvi1xxIQ_kT-YFBtA6_nawXnzdEr0xoUYdbNValRipdULQkLBxv9fRmFsEU",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "3822 East Lake Street, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.952239,
+               "lng" : -93.298661
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "c47bb61ef8050489b3440fee8a7ec10b6ebe3c50",
+         "name" : "Isles Bun & Coffee",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 581,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/112353648157831386069\"\u003eMichael Kimmel\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRdAAAAxLdpVlTJCKJrXi42aLUpP_IYQgsB8tE3qyy6kohRwMCS-3CbHPDUZYOF6wKI5WiJjumHVNswEtQmYUIIwVH5fO-K4vmrQRPfeP6eRVu0Vcjd64jdDtyX4xUEzpOcSG4jEhCs87YClTdM6pdAvd8FomsEGhR8Yl68MQl2tH5f9a3xEMCJa0s4tA",
+               "width" : 1032
+            }
+         ],
+         "place_id" : "ChIJXRFWDoAn9ocRMovFrU2ArFM",
+         "price_level" : 2,
+         "rating" : 4.9,
+         "reference" : "CnRlAAAAaE1lDxKR4E14knghn6guZVsUF3gXg_3_kpJssrSQQ7el7cPSDX9K5LOTAyTj9Ay53Xg7ZcOrRp6lkvxQDAW-nAovuD0CgVm4n-Bn3_TTDPmd4HpxiP_pJ9OVbgrK2h7K78Bnl4ILfQHYXzD6yUgB3BIQZrBWGXqkTAI2aaZRCKHSlhoUMtt1ohtyx8i_ZMG3hqZBFHnk6D0",
+         "scope" : "GOOGLE",
+         "types" : [
+            "bakery",
+            "store",
+            "cafe",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "vicinity" : "1424 West 28th Street, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 45.004448,
+               "lng" : -93.24757
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "b519aee0370ef2fd49ee0e4613737eaf2be423a7",
+         "name" : "Diamonds Coffee Shoppe",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 816,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/111668937621006241446\"\u003eZachary Fenhaus\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRdAAAAj4V2tqaMyIaqUJhJ3KF_SPJgeVJ7uGTfhdB-4hbn6-7ilnGq3FB76478AgDFtuZLKedZRKb9StBFSDqn8UeelGx-fDm83tdYmUlAy2bTR7K-sBTDj2fMLn84JKjSeZa5EhARXl5KlrqzHAT7mYhjmuAaGhS2wvz6f9-y6dkEeC4D-3uFHhpdYQ",
+               "width" : 488
+            }
+         ],
+         "place_id" : "ChIJoTInmpYts1IRmW3X4MZH72c",
+         "price_level" : 1,
+         "rating" : 4.5,
+         "reference" : "CnRpAAAAbmZiwvXVk1Td-tud4XOXg0CCsx-qwDHMXFDlSbDusN1NoMG37UaQT9r7o42ib6qSFhGKgWlNe5LDPrBoe_QpYio2S5Ksuv5kVmjohC-nol75jsUsLT36tYx3yyNLCwW6Rd_xPb6OJcfrg5Rxd3ZxMBIQVTM__tMxxjsAaH66pLw2AxoUzaPLFQQpmWU_3EnRiALevo_2Vb8",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "restaurant", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "1618 Central Avenue Northeast, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.978142,
+               "lng" : -93.272532
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "c9a21a5f553d2f7c78fe9042b1ea40239a2dfe3c",
+         "name" : "Starbucks",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJFwxx7ZAys1IRPGR8L5A1Mvc",
+         "price_level" : 2,
+         "rating" : 3.8,
+         "reference" : "CmRdAAAAUS1C8_nnbpHRDVf_lEB4oWQl0cjyXAbcQBPXhUsXxzZsWiH4H524_b4oCYnndwYhwUV-ZDjJzebrhiwcTKmCrJ6geOZU70IaT7Go3Z-mlI5DjUEAE9zJ00D1f8RU9zilEhB6wFlt4XJx2nIxyiMK9tuZGhRbvv-lOk2HIhh4fvwOtjztkqslhw",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "33 South 6th Street, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.987697,
+               "lng" : -93.256472
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "c2b993e67643c847c1925d3c91525ce77b4ef2eb",
+         "name" : "Taraccino Coffee",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJ7ScjN3kts1IR-WbG-QEWTa8",
+         "price_level" : 1,
+         "rating" : 4.4,
+         "reference" : "CnRkAAAAYTFHsn50Ue0mBBvodCCZ2W-mHJr9nD1HtYpAKv3CER7dgE1AQ-XCb2Qp7PHNJMJK8CFCXDmon4rzWgU4QeCw-Gkyh5xydmfc1Dl8YvSmlFIupktQ0macnWdILeKTFXvwb0arTpFDt4Rb4-Dtq4fwHBIQPRKaq0-tjzoJ0skS9iKBChoUkm6gNjWIlaSpK9PoLowJaKmhIkY",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "224 East Hennepin Avenue, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.964398,
+               "lng" : -93.272976
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "6de482f4de74ddde215658135f979cb588770009",
+         "name" : "Boiler Room Coffee",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJS7C_Uboys1IRaHTNTlSvZ-k",
+         "price_level" : 2,
+         "rating" : 4.1,
+         "reference" : "CnRmAAAAHZ4CF3ytvhgYKvXmqBPUQA-WTIOa4t67YL2FoH0Q_EGdWFgp3thg4Zge-B9gmBZ2muN6H0yKA0pniNXo62ZB287PFeFzDD3KuJECLdM9Pc-EZFP0VAi7lq6qK8myWfJroeCsOjAO2HRh2_CmUscD_xIQrtpjyigse5ZfMNkwhMKcghoUK00duCx0tDVuSdTivCcbqP-VtYg",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "restaurant", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "1830 3rd Avenue South, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.977226,
+               "lng" : -93.271621
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "948ad84465c2a085b5441f47eae497d37f511de3",
+         "name" : "Caribou Coffee",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 2988,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/108190339677752396804\"\u003eAlex Hatzenbuhler\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRdAAAAt6L2054B0rjy_a4oFvNaci3tYgoODcRghdfN2n-zUNlaM055pRbluONFvMd3fJ-w1-CyI4B8QvvL2gu5Y5N73-65ZQWKp_VNNYAtwT41nI5_cOsNn9LU7oOzSyk4S5LOEhBRfDj4-m9gNCsWl36JHs9JGhRGUG6gc8XxhLbEXONwjAzhD5u_Zw",
+               "width" : 5312
+            }
+         ],
+         "place_id" : "ChIJrxWXaJoys1IRQfy4e_YWmmQ",
+         "price_level" : 1,
+         "reference" : "CnRhAAAA14p99KvGEq6IYoAB2MrUYLbZMYN2U9IFDCuU2NoI7W_dmEEexRYrGGJvnt1pi8pGs7cXTc1WH0gGPxKVtTa7V17oGq1vsgZQ17ikQRDblrMICNyAKaKqp6_6RIhzae7gvQ_4pUAKhmMCmWt4L5EkVhIQ0ceHSVmwyUwwhFWVbft1mBoUP2s1DhuWuixYe_z5lUBMCrOAMO8",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "651 Nicollet Mall #219, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.970152,
+               "lng" : -93.24675000000001
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "5732f964ab441eff8233c21ab7d324f162bb1158",
+         "name" : "Mapps Coffee & Tea",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJwzEIs0Mts1IRuvd1F1p2zzw",
+         "price_level" : 1,
+         "rating" : 4.1,
+         "reference" : "CnRlAAAAWn-uuxJWxdjMZXYyDEniJWPCjLprsuQknt0rrKVvHmwmR2Ea_fW7rw5PY9F-R0JgYHSNth70rIwR4beP89m4JoN-vgEeuBXvIFbwJYmrBT5SWzc5kYywm9A2tpx1v0wzWpF9sAOuCAsEIqEaOP9d8hIQRAEi8T2Fw6I2gwMyS-hqwBoUC1-snrGbHQMKkgQLUzek9pH3Tpc",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "1810 Riverside Avenue, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.948134,
+               "lng" : -93.186412
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "848ce7e4ab056743672243cc9c31abca551d07b7",
+         "name" : "Kopplin's",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJKVCyN0gq9ocRKLhjMSOvkMA",
+         "price_level" : 1,
+         "rating" : 4.2,
+         "reference" : "CmRdAAAAAOxVAPPfkF2DApU-9zMbbC7CPJzKaK0SeQo7b9Uimaa9dXkV_MtUa-89ycAhwfeKoQvwm1WoKWXJGO1sJmThV2FReCW255o9PfSLqqGnG2xnow1wM9UgeJb9ySf4czbdEhB3DCyrzPWX3EFNiraox4GcGhTE2fQKzCnqno7BwMIKjwo63rts9Q",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "2038 Marshall Avenue, Saint Paul"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.977067,
+               "lng" : -93.26760899999999
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "62bcdad31f93feeb03fc271740a1d6e5ae015b59",
+         "name" : "Caribou Coffee",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJrxWXaJoys1IRaq_u2FZfsoM",
+         "price_level" : 1,
+         "reference" : "CnRiAAAAeLVErypW5iDCcjvyrYfnRn74TQMdzxeGKGJHwqTFiQQYgshTmWyyfFPiYvkfwGXcnXGQNOhAzjuRZmcHCqZhQjcXRTAAb5EM2-7vIrTU_3jMj3irjh9LhJmvjPPw1uDu4A4QsZkrLjkwUURMQQOnKBIQI4MezKQl2Ie8LVzAeAjCDhoUrdj4d5HvK7_OEkVzeD0s6BkggjY",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "200 South 6th Street #292, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.975959,
+               "lng" : -93.273702
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "bf27c1a129a8fcc39172a6525a536a9d5dcff8da",
+         "name" : "Caribou Coffee",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 2988,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/108190339677752396804\"\u003eAlex Hatzenbuhler\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRdAAAA3WwU7dSSRxYeOoceIzi4F5Ezw0yc39svEVLHZABjsy7qqZkx7vGHWY4iKUisqDBMCbo9Xl8JoJiRHGp9MlTar32U8oyTbxZ-zB0MNjUmez51xJ9898M1Uqj7csmOpyhoEhDwjnBneIHhOjhdQs0-tRloGhSo1VQ62rxKt3N20sIuGWTefSdQuQ",
+               "width" : 5312
+            }
+         ],
+         "place_id" : "ChIJ4yGf3ZYys1IRmc-QB4IifG8",
+         "price_level" : 1,
+         "reference" : "CnRhAAAAbQSL6XORJa2vOkaK29PiNbpjBvR_Hd7XLT6SAtxj0a-LRGTXHDKbJccx4rA6XCROSBiNKjwbLgYAL_pxY9eCbF23DbpXgvEywD2_CsnppC_bKb3goAvVYWAK1qBP5H2YKUKlBis8vrntJ90OiNmAERIQLbGcuP7xFRoJHI3Cn2QnDBoUgdP_qAOpKjkJiY7leKU91ug2m6I",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "800 Nicollet Mall, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.980237,
+               "lng" : -93.269884
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "ebf4bf617d8b33717d6ccd1359c2ce978cac6901",
+         "name" : "Dunn Bros Coffee",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 480,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/114860324187778728466\"\u003eGrant Nieddu\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRdAAAAiFlHUZQs-JZeaQCwKavKYnfIhdA4Z0iYKpya2ILU4QtN9lNJ_FoSvBlh-fum3zZ--9mTDuEqRgimOqFVsbsObKgZuXfRdQG61DuDuDGNxzeEJu6RHX1SIT8dzNQQUHMjEhBF1j1l4TniOX9UXMlWqCOhGhREaiKiJPcO9IrSflGYCftONRgEMQ",
+               "width" : 640
+            }
+         ],
+         "place_id" : "ChIJ64ilwZoys1IRg7L2IsizKck",
+         "reference" : "CnRkAAAASfzF3yL4gyJrnbjrOurownhwRg13iq-SYfuhUNCFVmSlbRZXj_34B-Y_TtY48r0cJ4mNSRJ58rCP2snmmMh3wifz0yDYwpSPYVbeeBbJvJRPwq_iM5syEwORSJiOvACQ8zgwM9AacJ0WfgOLKeo8FRIQLOUctEqz9mgTaYCHfNnMWBoUsxHPHDAYWNJ0-Nz7qklhIXEFJcA",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "300 Nicollet Mall, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.973998,
+               "lng" : -93.229947
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "2a7ae5ad1ce0160c7dd4b12bb6ee6092fb85cd94",
+         "name" : "Starbucks",
+         "place_id" : "ChIJe_jSGxgts1IR4wVdDOOr6zA",
+         "price_level" : 2,
+         "rating" : 4.2,
+         "reference" : "CmRcAAAAKPizc7OTS-xtj8KD7iJG0gS_pWxmtn26TgkabWpWd1Dj1cYR5MlNcnHeXGcxfy0PjXQVJQjQwyLZLR5WnjZ_3TykYcmSbrL16BSSJD_Jh0FUwdpJLqhiGmkJ5mfZCwvvEhD90-RHgbN38ByICYP2r8O8GhTGvnxEo6AoGpdhFOr35U0nddtP1Q",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "615 Washington Avenue Southeast, Minneapolis"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.980789,
+               "lng" : -93.263166
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+         "id" : "6ad483b466f72831dcf30c5655d00b8ccffd1a0c",
+         "name" : "Dunn Bros Coffee",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 540,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/118275736397507540413\"\u003eRachael Foltz\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRdAAAAUTmV_g4UgjtVgj_3o7rYtqynJMBjoUt0_a_PTgevtSbu9anFsyllv2MXmcCDyglOXdHGIm_VxJUFagS36k_bawzGnMVugiDUvhSDNl93WSFVDzA5xNhsq1JtWvBs-F8hEhDX8k8SUrNdXyszDOUmPAUTGhRFpzmlJ-CO7aAMx5YsZHnzQ59frA",
+               "width" : 720
+            }
+         ],
+         "place_id" : "ChIJk_jVH50ys1IRqteSQ63Ud8k",
+         "rating" : 4.3,
+         "reference" : "CnRkAAAA9rmZt-l5rsAbhzTLokpHfT4LsN2lhhirbj4th6fJ_n5UnF_Ats0pl9_tPThqSc2x1lyn0vaWDjnYzqL2pJyujuC49QT0G55L-Ayy-a3Jrb2JYfkblHFx7Sif82lOwxwLKIPFUFoq1n0eyEkstBwraRIQ6S71iZSXbfmEPqK9ittwkBoUg-hrNAfDnyNdEK9zDKRju_EhQdU",
+         "scope" : "GOOGLE",
+         "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+         "vicinity" : "201 3rd Avenue South, Minneapolis"
+      }
+   ],
+   "status" : "OK"
+}
