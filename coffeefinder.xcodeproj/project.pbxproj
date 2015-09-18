@@ -13,12 +13,15 @@
 		931B6CCB1BABE97200969E6E /* results.json in Resources */ = {isa = PBXBuildFile; fileRef = 931B6CCA1BABE97200969E6E /* results.json */; };
 		931B6CCD1BABEC5700969E6E /* request_denied.json in Resources */ = {isa = PBXBuildFile; fileRef = 931B6CCC1BABEC5700969E6E /* request_denied.json */; };
 		931B6CCF1BABF0D500969E6E /* PlacesResultsParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 931B6CCE1BABF0D500969E6E /* PlacesResultsParserTests.m */; };
+		934189B21BACA4CF0034E2DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939BB2CD1BACA436009D1005 /* CoreLocation.framework */; };
+		934189B31BACA4D50034E2DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939BB2CF1BACA444009D1005 /* MapKit.framework */; };
 		936C13F91BAB5DB500A3BA3A /* PlacesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 936C13F81BAB5DB500A3BA3A /* PlacesService.m */; };
 		936C13FC1BAB6F5200A3BA3A /* PlacesURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 936C13FB1BAB6F5200A3BA3A /* PlacesURLBuilder.m */; };
 		936C13FE1BAB71AA00A3BA3A /* PlacesURLBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 936C13FD1BAB71AA00A3BA3A /* PlacesURLBuilderTests.m */; };
+		939BB2C91BAC9086009D1005 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939BB2C81BAC9086009D1005 /* MapViewController.m */; settings = {ASSET_TAGS = (); }; };
+		939BB2CC1BAC9339009D1005 /* MapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 939BB2CB1BAC9339009D1005 /* MapViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		93CDC58F1BAB028700A64733 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CDC58E1BAB028700A64733 /* main.m */; };
 		93CDC5921BAB028700A64733 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CDC5911BAB028700A64733 /* AppDelegate.m */; };
-		93CDC5951BAB028700A64733 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CDC5941BAB028700A64733 /* ViewController.m */; };
 		93CDC5981BAB028700A64733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CDC5961BAB028700A64733 /* Main.storyboard */; };
 		93CDC59A1BAB028700A64733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93CDC5991BAB028700A64733 /* Assets.xcassets */; };
 		E1341402027630C79786578D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAF347FB17A0518EBDAF446 /* libPods.a */; };
@@ -45,17 +48,22 @@
 		931B6CCA1BABE97200969E6E /* results.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = results.json; sourceTree = "<group>"; };
 		931B6CCC1BABEC5700969E6E /* request_denied.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = request_denied.json; sourceTree = "<group>"; };
 		931B6CCE1BABF0D500969E6E /* PlacesResultsParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesResultsParserTests.m; sourceTree = "<group>"; };
+		934189B51BACA5FF0034E2DF /* Minneapolis.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Minneapolis.gpx; sourceTree = "<group>"; };
 		936C13F71BAB5DB500A3BA3A /* PlacesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesService.h; sourceTree = "<group>"; };
 		936C13F81BAB5DB500A3BA3A /* PlacesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesService.m; sourceTree = "<group>"; };
 		936C13FA1BAB6F5200A3BA3A /* PlacesURLBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesURLBuilder.h; sourceTree = "<group>"; };
 		936C13FB1BAB6F5200A3BA3A /* PlacesURLBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesURLBuilder.m; sourceTree = "<group>"; };
 		936C13FD1BAB71AA00A3BA3A /* PlacesURLBuilderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesURLBuilderTests.m; sourceTree = "<group>"; };
+		939BB2C71BAC9086009D1005 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		939BB2C81BAC9086009D1005 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		939BB2CA1BAC9339009D1005 /* MapViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewModel.h; sourceTree = "<group>"; };
+		939BB2CB1BAC9339009D1005 /* MapViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewModel.m; sourceTree = "<group>"; };
+		939BB2CD1BACA436009D1005 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		939BB2CF1BACA444009D1005 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		93CDC58A1BAB028600A64733 /* coffeefinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coffeefinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CDC58E1BAB028700A64733 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93CDC5901BAB028700A64733 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93CDC5911BAB028700A64733 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		93CDC5931BAB028700A64733 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		93CDC5941BAB028700A64733 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		93CDC5971BAB028700A64733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93CDC5991BAB028700A64733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93CDC59E1BAB028700A64733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934189B31BACA4D50034E2DF /* MapKit.framework in Frameworks */,
+				934189B21BACA4CF0034E2DF /* CoreLocation.framework in Frameworks */,
 				E1341402027630C79786578D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,9 +96,20 @@
 		570BE4B2A275C0224A2517D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				939BB2CF1BACA444009D1005 /* MapKit.framework */,
+				939BB2CD1BACA436009D1005 /* CoreLocation.framework */,
 				3AAF347FB17A0518EBDAF446 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		939BB2C61BAC905E009D1005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				939BB2CA1BAC9339009D1005 /* MapViewModel.h */,
+				939BB2CB1BAC9339009D1005 /* MapViewModel.m */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 		93CDC5811BAB028600A64733 = {
@@ -150,6 +171,7 @@
 		93FE0F201BAB5B490032A84F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				934189B51BACA5FF0034E2DF /* Minneapolis.gpx */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -160,6 +182,7 @@
 				93FE0F221BAB5BA60032A84F /* Data */,
 				93FE0F231BAB5BAE0032A84F /* Models */,
 				93FE0F241BAB5BB20032A84F /* Viewcontrollers */,
+				939BB2C61BAC905E009D1005 /* ViewModels */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -189,8 +212,8 @@
 		93FE0F241BAB5BB20032A84F /* Viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
-				93CDC5931BAB028700A64733 /* ViewController.h */,
-				93CDC5941BAB028700A64733 /* ViewController.m */,
+				939BB2C71BAC9086009D1005 /* MapViewController.h */,
+				939BB2C81BAC9086009D1005 /* MapViewController.m */,
 			);
 			name = Viewcontrollers;
 			sourceTree = "<group>";
@@ -355,8 +378,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				931B6CC81BABE86300969E6E /* PlaceResult.m in Sources */,
+				939BB2CC1BAC9339009D1005 /* MapViewModel.m in Sources */,
 				936C13F91BAB5DB500A3BA3A /* PlacesService.m in Sources */,
-				93CDC5951BAB028700A64733 /* ViewController.m in Sources */,
+				939BB2C91BAC9086009D1005 /* MapViewController.m in Sources */,
 				93CDC5921BAB028700A64733 /* AppDelegate.m in Sources */,
 				931B6CC51BABE58100969E6E /* PlacesResultsParser.m in Sources */,
 				936C13FC1BAB6F5200A3BA3A /* PlacesURLBuilder.m in Sources */,
@@ -513,6 +537,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = coffeefinderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyngby.coffeefinderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -525,6 +550,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = coffeefinderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyngby.coffeefinderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
