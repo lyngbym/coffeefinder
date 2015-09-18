@@ -216,6 +216,7 @@
 				93CDC5871BAB028600A64733 /* Frameworks */,
 				93CDC5881BAB028600A64733 /* Resources */,
 				FE08CFE4E0E2BD40913BF11E /* Copy Pods Resources */,
+				930A49BA1BAC6D4F00572D3F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -317,6 +318,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		930A49BA1BAC6D4F00572D3F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#if [ ${CONFIGURATION} == \"Release\" ]; then\nAPPLEDOC_PATH=`which appledoc`\nif [ $APPLEDOC_PATH ]; then\n$APPLEDOC_PATH \\\n--project-name ${PRODUCT_NAME} \\\n--project-company \"Mason Lyngby\" \\\n--company-id \"com.lyngby\" \\\n--output ${PRODUCT_NAME}Docs \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n${PROJECT_DIR}/${PRODUCT_NAME}\nfi;\n#fi;";
 		};
 		FE08CFE4E0E2BD40913BF11E /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
