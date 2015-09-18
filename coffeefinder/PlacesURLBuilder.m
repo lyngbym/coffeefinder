@@ -33,7 +33,7 @@ NSString * const kLocation = @"location";
     NSNumber *latitudeNumber = parameters[kLatitude];
     NSNumber *longitudeNumber = parameters[kLongitude];
     
-    NSString *nearbyString = [NSString stringWithFormat:@"%@%@=%@&%@=%lf,%lf&%@=%@", [self nearbyPlaces],
+    NSString *nearbyString = [NSString stringWithFormat:@"%@%@=%@&%@=%lf,%lf&%@=%@&name=coffee", [self nearbyPlaces],
                               kKey, parameters[kKey],
                               kLocation, [latitudeNumber doubleValue], [longitudeNumber doubleValue],
                               kRadius, parameters[kRadius]];

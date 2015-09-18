@@ -18,8 +18,8 @@
 		936C13F91BAB5DB500A3BA3A /* PlacesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 936C13F81BAB5DB500A3BA3A /* PlacesService.m */; };
 		936C13FC1BAB6F5200A3BA3A /* PlacesURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 936C13FB1BAB6F5200A3BA3A /* PlacesURLBuilder.m */; };
 		936C13FE1BAB71AA00A3BA3A /* PlacesURLBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 936C13FD1BAB71AA00A3BA3A /* PlacesURLBuilderTests.m */; };
-		939BB2C91BAC9086009D1005 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939BB2C81BAC9086009D1005 /* MapViewController.m */; settings = {ASSET_TAGS = (); }; };
-		939BB2CC1BAC9339009D1005 /* MapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 939BB2CB1BAC9339009D1005 /* MapViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		939BB2C91BAC9086009D1005 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939BB2C81BAC9086009D1005 /* MapViewController.m */; };
+		939BB2CC1BAC9339009D1005 /* MapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 939BB2CB1BAC9339009D1005 /* MapViewModel.m */; };
 		93CDC58F1BAB028700A64733 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CDC58E1BAB028700A64733 /* main.m */; };
 		93CDC5921BAB028700A64733 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CDC5911BAB028700A64733 /* AppDelegate.m */; };
 		93CDC5981BAB028700A64733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CDC5961BAB028700A64733 /* Main.storyboard */; };

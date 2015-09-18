@@ -52,14 +52,14 @@ static NSString * const kVicinity = @"vicinity";
         for (NSDictionary *resultInfo in results) {
             
             PlaceResult *place = [PlaceResult new];
-            place.name = resultInfo[kName];
+            place.title = resultInfo[kName];
             
             NSDictionary *locationInfo = resultInfo[kGeometry][kLocation];
             NSNumber *latNum = locationInfo[kLat];
             NSNumber *lngNum = locationInfo[kLng];
             
-            place.location = CLLocationCoordinate2DMake([latNum doubleValue], [lngNum doubleValue]);
-            place.vicinity = resultInfo[kVicinity];
+            place.coordinate = CLLocationCoordinate2DMake([latNum doubleValue], [lngNum doubleValue]);
+            place.subtitle = resultInfo[kVicinity];
             place.placeId = resultInfo[kPlaceId];
             
             [places addObject:place];

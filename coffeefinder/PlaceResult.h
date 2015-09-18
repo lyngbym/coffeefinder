@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
+@import CoreLocation;
+@import MapKit;
 
-@interface PlaceResult : NSObject
+@interface PlaceResult : NSObject <MKAnnotation>
 
-@property (strong, nonatomic) NSString *name;
-@property (strong, nonatomic) NSString *placeId;
-@property (assign, nonatomic) CLLocationCoordinate2D location;
-@property (strong, nonatomic) NSString *vicinity;
+@property (copy, nonatomic) NSString *title;
+@property (copy, nonatomic) NSString *placeId;
+@property (assign, nonatomic) CLLocationCoordinate2D coordinate;
+@property (copy, nonatomic) NSString *subtitle;
 
 @end

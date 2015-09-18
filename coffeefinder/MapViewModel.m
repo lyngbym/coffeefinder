@@ -77,6 +77,10 @@
 
 - (void)searchNearbyCoffeeShops:(CLLocationCoordinate2D)center completion:(void (^)(NSArray *, NSError *))completion {
     NSAssert(completion != nil, @"completion cannot be nil");
+    
+    [self.service searchCoffeePlaces:center radius:10 completion:^(NSArray *results, NSError *error) {
+        completion(results, error);
+    }];
 }
 
 - (float)milesToMeters:(float)miles {
