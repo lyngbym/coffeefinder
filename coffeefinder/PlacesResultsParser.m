@@ -71,7 +71,7 @@ static NSString * const kVicinity = @"vicinity";
         self.parseCompletion(PlacesResultStatusRequestDenied, nil, nil);
     }
     else {
-        NSError *error = [NSError errorWithDomain:@"PlacesError" code:200 userInfo:@{NSLocalizedDescriptionKey : @"Oops, couldn't get any results from Google Places at this time. Please try again later"}];
+        NSError *error = [NSError errorWithDomain:@"PlacesError" code:200 userInfo:@{NSLocalizedDescriptionKey : @"Oops, search for any coffee shops at this time. Please try again later"}];
         self.parseCompletion(PlacesResultStatusError, nil, error);
     }
 }

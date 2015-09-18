@@ -21,7 +21,6 @@
 		93CDC5951BAB028700A64733 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CDC5941BAB028700A64733 /* ViewController.m */; };
 		93CDC5981BAB028700A64733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CDC5961BAB028700A64733 /* Main.storyboard */; };
 		93CDC59A1BAB028700A64733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93CDC5991BAB028700A64733 /* Assets.xcassets */; };
-		93CDC5A81BAB028700A64733 /* coffeefinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CDC5A71BAB028700A64733 /* coffeefinderTests.m */; };
 		E1341402027630C79786578D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAF347FB17A0518EBDAF446 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +60,6 @@
 		93CDC5991BAB028700A64733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93CDC59E1BAB028700A64733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93CDC5A31BAB028700A64733 /* coffeefinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coffeefinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93CDC5A71BAB028700A64733 /* coffeefinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coffeefinderTests.m; sourceTree = "<group>"; };
 		93CDC5A91BAB028700A64733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF575DE7F79ACBD640DCA5DA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,13 +137,12 @@
 		93CDC5A61BAB028700A64733 /* coffeefinderTests */ = {
 			isa = PBXGroup;
 			children = (
-				93CDC5A71BAB028700A64733 /* coffeefinderTests.m */,
 				93CDC5A91BAB028700A64733 /* Info.plist */,
+				931B6CCE1BABF0D500969E6E /* PlacesResultsParserTests.m */,
 				931B6CC11BABE1CA00969E6E /* PlacesServiceTests.m */,
 				936C13FD1BAB71AA00A3BA3A /* PlacesURLBuilderTests.m */,
 				931B6CCC1BABEC5700969E6E /* request_denied.json */,
 				931B6CCA1BABE97200969E6E /* results.json */,
-				931B6CCE1BABF0D500969E6E /* PlacesResultsParserTests.m */,
 			);
 			path = coffeefinderTests;
 			sourceTree = "<group>";
@@ -358,7 +355,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				931B6CC21BABE1CA00969E6E /* PlacesServiceTests.m in Sources */,
-				93CDC5A81BAB028700A64733 /* coffeefinderTests.m in Sources */,
 				936C13FE1BAB71AA00A3BA3A /* PlacesURLBuilderTests.m in Sources */,
 				931B6CCF1BABF0D500969E6E /* PlacesResultsParserTests.m in Sources */,
 			);
