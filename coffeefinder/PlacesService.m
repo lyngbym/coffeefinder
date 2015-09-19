@@ -7,6 +7,7 @@
 //
 
 #import "PlacesService.h"
+#import "PlaceResult.h"
 #import "PlacesURLBuilder.h"
 #import "AFNetworking.h"
 #import "PlacesResultsParser.h"
@@ -60,7 +61,16 @@ static const double kMetersPerMile = 1609.34;
                         }
                             break;
                         case PlacesResultStatusOK: {
-                            completion(results, nil);
+                            
+                            // filter out results outside of radisu
+                            MKMapPoint centerPt = MKMapPointForCoordinate(center);
+                            CLLocationDistance maxDistance = radius * 1609.34; // meters per mile
+                            NSArray *filteredResults = [results filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(PlaceResult *  _Nonnull result, NSDictionary<NSString *,id> * _Nullable bindings) {
+                                MKMapPoint resultPt = MKMapPointForCoordinate(result.coordinate);
+                                return MKMetersBetweenMapPoints(centerPt, resultPt) <= maxDistance;
+                            }]];
+                            
+                            completion(filteredResults, nil);
                         }
                             break;
                     }

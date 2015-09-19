@@ -26,17 +26,16 @@ NSString * const kLocation = @"location";
 }
 
 + (NSURL *)nearbyPlacesURLWithParams:(NSDictionary *)parameters {
-    if (parameters[kKey] == nil || parameters[kLatitude] == nil || parameters[kLongitude] == nil || parameters[kRadius] == nil) {
+    if (parameters[kKey] == nil || parameters[kLatitude] == nil || parameters[kLongitude] == nil) {
         return nil; // can't query without including all required parameters
     }
     
     NSNumber *latitudeNumber = parameters[kLatitude];
     NSNumber *longitudeNumber = parameters[kLongitude];
     
-    NSString *nearbyString = [NSString stringWithFormat:@"%@%@=%@&%@=%lf,%lf&%@=%@&name=coffee", [self nearbyPlaces],
+    NSString *nearbyString = [NSString stringWithFormat:@"%@%@=%@&%@=%lf,%lf&name=coffee&rankby=distance", [self nearbyPlaces],
                               kKey, parameters[kKey],
-                              kLocation, [latitudeNumber doubleValue], [longitudeNumber doubleValue],
-                              kRadius, parameters[kRadius]];
+                              kLocation, [latitudeNumber doubleValue], [longitudeNumber doubleValue]];
     
     NSLog(@"%@", nearbyString);
     return [NSURL URLWithString:nearbyString];
