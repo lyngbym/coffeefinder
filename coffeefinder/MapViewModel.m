@@ -8,6 +8,7 @@
 
 #import "MapViewModel.h"
 #import "PlacesService.h"
+@import MapKit;
 
 @interface MapViewModel () <CLLocationManagerDelegate>
 

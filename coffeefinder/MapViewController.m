@@ -14,7 +14,8 @@
 
 @interface MapViewController () <MKMapViewDelegate>
 
-@property (strong, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 @property (strong, nonatomic) MapViewModel *viewModel;
 @property (assign, nonatomic) BOOL zooming;
 
@@ -26,6 +27,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.viewModel = [MapViewModel new];
+    self.toolbar.barTintColor = [UIColor colorWithRed:48.0/255.0 green:135.0/255.0 blue:62.0/255.0 alpha:1.0];
+    [self.toolbar setItems:nil];
+    
+    MKUserTrackingBarButtonItem *trackingButton = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
+    self.toolbar.items = @[trackingButton];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

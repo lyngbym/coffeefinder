@@ -181,7 +181,7 @@
 			children = (
 				93FE0F221BAB5BA60032A84F /* Data */,
 				93FE0F231BAB5BAE0032A84F /* Models */,
-				93FE0F241BAB5BB20032A84F /* Viewcontrollers */,
+				93FE0F241BAB5BB20032A84F /* ViewControllers */,
 				939BB2C61BAC905E009D1005 /* ViewModels */,
 			);
 			name = Classes;
@@ -209,13 +209,13 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		93FE0F241BAB5BB20032A84F /* Viewcontrollers */ = {
+		93FE0F241BAB5BB20032A84F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				939BB2C71BAC9086009D1005 /* MapViewController.h */,
 				939BB2C81BAC9086009D1005 /* MapViewController.m */,
 			);
-			name = Viewcontrollers;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		F94C8970D4ECAEAE21A4F32B /* Pods */ = {
