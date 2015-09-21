@@ -78,7 +78,12 @@
         return nil;
     }
     MKPinAnnotationView *annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"annotationId"];
-    annotationView.pinTintColor = [UIColor colorWithRed:48.0/255.0 green:135.0/255.0 blue:62.0/255.0 alpha:1.0];
+    if ([annotationView respondsToSelector:@selector(pinTintColor)]) {
+        annotationView.pinTintColor = [UIColor colorWithRed:48.0/255.0 green:135.0/255.0 blue:62.0/255.0 alpha:1.0];
+    }
+    else {
+        annotationView.pinColor = MKPinAnnotationColorGreen;
+    }
     annotationView.animatesDrop = YES;
     annotationView.canShowCallout = YES;
     
@@ -134,7 +139,7 @@
                 }
                 
                 MKCoordinateSpan span = MKCoordinateSpanMake(maxLat - minLat, maxLon - minLon);
-                CLLocationCoordinate2D center = CLLocationCoordinate2DMake((maxLat - span.latitudeDelta / 2), maxLon - span.longitudeDelta / 2);
+                CLLocationCoordinate2D center = CLLocationCoordinate2DMake((maxLat - span.latitudeDelta / 2.1), maxLon - span.longitudeDelta / 2.1);
                 
                 MKCoordinateRegion region = MKCoordinateRegionMake(center, span);
                 [weakSelf.mapView setRegion:region animated:YES];

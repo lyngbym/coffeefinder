@@ -4,22 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-coffeefinder-AFNetworking.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-coffeefinder.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-coffeefinderTests-AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>05BCF42C6C45D6B6835A169B</key>
+		<key>3E5830238B04206F0F04A176EE3C1176</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>388CFED40169195B2406534D</key>
+		<key>897F5D6C9BBEFBB4D7946D1DA702C35D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>561381297209EB2009E8F22B</key>
+		<key>A8825099495AA5CA2998060134ADB732</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AB4392B1AD88B3C487713305</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C2F7D86004E72BA3322E9A96</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D41E8A2927E229526A70757B</key>
+		<key>E0A0843C35E4406010926441E5E9C150</key>
 		<dict>
 			<key>primary</key>
 			<true/>
