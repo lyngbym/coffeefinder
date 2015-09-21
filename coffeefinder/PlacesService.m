@@ -12,7 +12,7 @@
 #import "AFNetworking.h"
 #import "PlacesResultsParser.h"
 
-static NSString const * kAPI_KEY = @"AIzaSyAL8bp2FYHtIkcfQJ-aWJU8G4X_6PzSRAo";
+static NSString * const kAPI_KEY = @"YOURAPI_KEY";
 static const double kMetersPerMile = 1609.34;
 
 @interface PlacesService ()
