@@ -103,6 +103,7 @@
     }
     annotationView.animatesDrop = YES;
     annotationView.canShowCallout = YES;
+    annotationView.leftCalloutAccessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"coffee-map"]];
     
     return annotationView;
 }
