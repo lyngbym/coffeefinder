@@ -13,11 +13,11 @@
 		931B6CCB1BABE97200969E6E /* results.json in Resources */ = {isa = PBXBuildFile; fileRef = 931B6CCA1BABE97200969E6E /* results.json */; };
 		931B6CCD1BABEC5700969E6E /* request_denied.json in Resources */ = {isa = PBXBuildFile; fileRef = 931B6CCC1BABEC5700969E6E /* request_denied.json */; };
 		931B6CCF1BABF0D500969E6E /* PlacesResultsParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 931B6CCE1BABF0D500969E6E /* PlacesResultsParserTests.m */; };
-		934189B21BACA4CF0034E2DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939BB2CD1BACA436009D1005 /* CoreLocation.framework */; };
-		934189B31BACA4D50034E2DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939BB2CF1BACA444009D1005 /* MapKit.framework */; };
 		936C13F91BAB5DB500A3BA3A /* PlacesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 936C13F81BAB5DB500A3BA3A /* PlacesService.m */; };
 		936C13FC1BAB6F5200A3BA3A /* PlacesURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 936C13FB1BAB6F5200A3BA3A /* PlacesURLBuilder.m */; };
 		936C13FE1BAB71AA00A3BA3A /* PlacesURLBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 936C13FD1BAB71AA00A3BA3A /* PlacesURLBuilderTests.m */; };
+		938131031BAF9F4F00AF3E70 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939BB2CD1BACA436009D1005 /* CoreLocation.framework */; };
+		938131041BAF9F5600AF3E70 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939BB2CF1BACA444009D1005 /* MapKit.framework */; };
 		939BB2C91BAC9086009D1005 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939BB2C81BAC9086009D1005 /* MapViewController.m */; };
 		939BB2CC1BAC9339009D1005 /* MapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 939BB2CB1BAC9339009D1005 /* MapViewModel.m */; };
 		93CDC58F1BAB028700A64733 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CDC58E1BAB028700A64733 /* main.m */; };
@@ -77,8 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				934189B31BACA4D50034E2DF /* MapKit.framework in Frameworks */,
-				934189B21BACA4CF0034E2DF /* CoreLocation.framework in Frameworks */,
+				938131041BAF9F5600AF3E70 /* MapKit.framework in Frameworks */,
+				938131031BAF9F4F00AF3E70 /* CoreLocation.framework in Frameworks */,
 				E1341402027630C79786578D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +279,7 @@
 				TargetAttributes = {
 					93CDC5891BAB028600A64733 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = E6UNDT9HKN;
 					};
 					93CDC5A21BAB028700A64733 = {
 						CreatedOnToolsVersion = 7.1;
@@ -508,11 +509,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = coffeefinder/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyngby.coffeefinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -523,11 +527,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = coffeefinder/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyngby.coffeefinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

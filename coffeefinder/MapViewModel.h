@@ -9,14 +9,18 @@
 #import <Foundation/Foundation.h>
 @import CoreLocation;
 
+
+
 @interface MapViewModel : NSObject
 
 @property (strong, nonatomic, readonly) CLLocation *userLocation;
 
 - (void)promptForLocation:(void(^)(BOOL, NSString *))completion;
 
-- (void)searchNearbyCoffeeShops:(CLLocationCoordinate2D)center completion:(void(^)(NSArray *results, NSError *error))completion;
+- (void)searchNearbyCoffeeShops:(CLLocationCoordinate2D)center radius:(NSUInteger)radius completion:(void(^)(NSArray *results, NSError *error))completion;
 
 - (float)milesToMeters:(float)miles;
+
+- (BOOL)locationAvailable;
 
 @end

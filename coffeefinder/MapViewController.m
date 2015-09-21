@@ -15,7 +15,7 @@
 @interface MapViewController () <MKMapViewDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
-@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
+@property (weak, nonatomic) IBOutlet UIButton *locationButton;
 @property (strong, nonatomic) MapViewModel *viewModel;
 @property (assign, nonatomic) BOOL zooming;
 
@@ -27,11 +27,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.viewModel = [MapViewModel new];
-    self.toolbar.barTintColor = [UIColor colorWithRed:48.0/255.0 green:135.0/255.0 blue:62.0/255.0 alpha:1.0];
-    [self.toolbar setItems:nil];
     
-    MKUserTrackingBarButtonItem *trackingButton = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
-    self.toolbar.items = @[trackingButton];
+    if (![CLLocationManager locationServicesEnabled]) {
+        self.mapView.showsUserLocation = NO;
+    }
+
+    UIImage *locationImage = [[UIImage imageNamed:@"Location"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    [self.locationButton setImage:locationImage forState:UIControlStateNormal];
+    [self.locationButton setTintColor:[UIColor whiteColor]];
+    
+    UIImage *selectedImage = [[UIImage imageNamed:@"LocationFilled"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    [self.locationButton setImage:selectedImage forState:UIControlStateHighlighted];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -83,50 +89,60 @@
     if(self.zooming) {
         self.zooming = NO;
         
-        [self.viewModel searchNearbyCoffeeShops:self.viewModel.userLocation.coordinate completion:^(NSArray *results, NSError *error) {
-            if (error != nil) {
-                // TODO: deal with error
-            }
-            else if(results.count > 0) {
-                for (PlaceResult *result in results) {
-                    [self.mapView addAnnotation:result];
-                }
-            }
-            else {
-                // TODO: deal with no results
-            }
-        }];
+        [self loadResults];
     }
+}
+
+#pragma mark - Actions
+
+- (IBAction)locationButtonPressed:(id)sender {
+    [self loadResults];
 }
 
 #pragma mark - Private Methods
 
-- (void)loadResultsIfNeeded {
+- (void)loadResults {
+    [self loadResults:10];
+}
+
+- (void)loadResults:(NSUInteger)radius {
     if (self.viewModel.userLocation != nil) {
-        [self.viewModel searchNearbyCoffeeShops:self.viewModel.userLocation.coordinate completion:^(NSArray *results, NSError *error) {
+        __weak MapViewController *weakSelf = self;
+        [self.viewModel searchNearbyCoffeeShops:self.viewModel.userLocation.coordinate radius:radius completion:^(NSArray *results, NSError *error) {
             if (error != nil) {
                 // TODO: deal with error
             }
             else if(results.count > 0) {
+                NSArray *annotationsToRemove = [weakSelf.mapView.annotations filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id  _Nonnull evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
+                    return [evaluatedObject isKindOfClass:[PlaceResult class]];
+                }]];
+                
+                [weakSelf.mapView removeAnnotations:annotationsToRemove];
+                
+                CLLocationDegrees minLat = 90.0;
+                CLLocationDegrees maxLat = -90.0;
+                CLLocationDegrees minLon = 180.0;
+                CLLocationDegrees maxLon = -180.0;
+                
                 for (PlaceResult *result in results) {
-                    [self.mapView addAnnotation:result];
+                    if (result.coordinate.latitude ) {
+                        minLat = MIN(minLat, result.coordinate.latitude);
+                        minLon = MIN(minLon, result.coordinate.longitude);
+                        maxLat = MAX(maxLat, result.coordinate.latitude);
+                        maxLon = MAX(maxLon, result.coordinate.longitude);
+                    }
                 }
-            }
-            else {
-                // TODO: deal with no results
+                
+                MKCoordinateSpan span = MKCoordinateSpanMake(maxLat - minLat, maxLon - minLon);
+                CLLocationCoordinate2D center = CLLocationCoordinate2DMake((maxLat - span.latitudeDelta / 2), maxLon - span.longitudeDelta / 2);
+                
+                MKCoordinateRegion region = MKCoordinateRegionMake(center, span);
+                [weakSelf.mapView setRegion:region animated:YES];
+                
+                [weakSelf.mapView addAnnotations:results];
             }
         }];
     }
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

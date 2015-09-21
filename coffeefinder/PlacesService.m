@@ -36,14 +36,14 @@ static const double kMetersPerMile = 1609.34;
     
     NSAssert(completion != nil, @"completion block can't be nil");
     
-    NSURL *nearbyPlacesURL = [PlacesURLBuilder nearbyPlacesURLWithParams:@{kKey : kAPI_KEY,
+    NSURL *placesURL = [PlacesURLBuilder nearbyPlacesURLWithParams:@{kKey : kAPI_KEY,
                                                                    kLatitude : @(center.latitude),
                                                                    kLongitude : @(center.longitude),
                                                                    kRadius : @(radius * kMetersPerMile)}];
     
-    NSURLRequest *nearbyPlacesRequest = [NSURLRequest requestWithURL:nearbyPlacesURL];
+    NSURLRequest *placesRequest = [NSURLRequest requestWithURL:placesURL];
     
-    NSURLSessionDataTask *nearbyPlacesTask = [self.sessionManager dataTaskWithRequest:nearbyPlacesRequest completionHandler:^(NSURLResponse * _Nonnull response, id  _Nonnull responseObject, NSError * _Nonnull error) {
+    NSURLSessionDataTask *placesTask = [self.sessionManager dataTaskWithRequest:placesRequest completionHandler:^(NSURLResponse * _Nonnull response, id  _Nonnull responseObject, NSError * _Nonnull error) {
         if (error) {
             completion(nil, error);
         }
@@ -65,6 +65,7 @@ static const double kMetersPerMile = 1609.34;
                             // filter out results outside of radisu
                             MKMapPoint centerPt = MKMapPointForCoordinate(center);
                             CLLocationDistance maxDistance = radius * 1609.34; // meters per mile
+                            NSLog(@"maxDistance %f", maxDistance);
                             NSArray *filteredResults = [results filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(PlaceResult *  _Nonnull result, NSDictionary<NSString *,id> * _Nullable bindings) {
                                 MKMapPoint resultPt = MKMapPointForCoordinate(result.coordinate);
                                 return MKMetersBetweenMapPoints(centerPt, resultPt) <= maxDistance;
@@ -82,7 +83,7 @@ static const double kMetersPerMile = 1609.34;
         }
     }];
     
-    [nearbyPlacesTask resume];
+    [placesTask resume];
 }
 
 

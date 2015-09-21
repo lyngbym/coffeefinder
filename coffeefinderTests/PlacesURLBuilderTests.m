@@ -46,11 +46,6 @@
     XCTAssertNil(nearbyPlacesURL);
 }
 
-- (void)testMissingRadiusFieldReturnsNil {
-    NSURL *nearbyPlacesURL = [PlacesURLBuilder nearbyPlacesURLWithParams:@{kKey : @"asdfasdf", kLatitude : @(50), kLongitude : @(-50)}];
-    XCTAssertNil(nearbyPlacesURL);
-}
-
 - (void)testAllRequiredFieldsNotNil {
     NSURL *nearbyPlacesURL = [PlacesURLBuilder nearbyPlacesURLWithParams:@{kKey : @"asdfasdf",
                                                                            kLatitude : @(50),
@@ -60,12 +55,11 @@
 }
 
 - (void)testFullURL {
-    NSString *compareURL = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=%@&location=%f,%f&radius=%d&name=coffee", @"API_KEY", 50.0, -50.0, 10];
+    NSString *compareURL = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=%@&location=%f,%f&name=coffee&rankby=distance", @"API_KEY", 50.0, -50.0];
     
     NSURL *nearbyPlacesURL = [PlacesURLBuilder nearbyPlacesURLWithParams:@{kKey : @"API_KEY",
                                                                            kLatitude : @(50),
-                                                                           kLongitude : @(-50),
-                                                                           kRadius : @(10)}];
+                                                                           kLongitude : @(-50)}];
     
     XCTAssertTrue([[nearbyPlacesURL absoluteString] isEqualToString:compareURL]);
 }

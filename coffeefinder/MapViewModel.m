@@ -21,6 +21,7 @@
 @property (assign, nonatomic) NSInteger locationCallbackCount;
 @property (assign, nonatomic) BOOL gettingPermission;
 @property (assign, nonatomic) BOOL gettingUpdates;
+@property (strong, nonatomic) NSDate *locationWarningExpiration;
 
 @end
 
@@ -44,6 +45,8 @@
     NSAssert(completion != nil, @"completion block can't be nil");
     NSAssert(self.locationManager.delegate != nil, @"no delegate set for location manager");
     
+    self.locationCompletion = completion;
+    
     if (![CLLocationManager locationServicesEnabled]) {
         completion(NO, @"Oops, we cannot search for local coffee shops because location services is disabled. Please check in Settings App -> Privacy -> Location Services.");
     }
@@ -56,12 +59,10 @@
             }
                 break;
             case kCLAuthorizationStatusAuthorizedWhenInUse: {
-                self.locationCompletion = completion;
                 [self startLocationUpdatesIfNeeded];
             }
                 break;
             case kCLAuthorizationStatusNotDetermined: {
-                self.locationCompletion = completion;
                 self.gettingPermission = YES;
                 [self.locationManager requestWhenInUseAuthorization];
             }
@@ -76,18 +77,21 @@
     }
 }
 
-- (void)searchNearbyCoffeeShops:(CLLocationCoordinate2D)center completion:(void (^)(NSArray *, NSError *))completion {
+- (void)searchNearbyCoffeeShops:(CLLocationCoordinate2D)center radius:(NSUInteger)radius completion:(void (^)(NSArray *, NSError *))completion {
     NSAssert(completion != nil, @"completion cannot be nil");
     
-    [self.service searchCoffeePlaces:center radius:10 completion:^(NSArray *results, NSError *error) {
+    [self.service searchCoffeePlaces:center radius:radius completion:^(NSArray *results, NSError *error) {
         completion(results, error);
     }];
 }
 
 - (float)milesToMeters:(float)miles {
     // 1 mile is 1609.344 meters
-    // source: http://www.google.com/search?q=1+mile+in+meters
     return 1609.344f * miles;
+}
+
+- (BOOL)locationAvailable {
+    return [CLLocationManager locationServicesEnabled] && [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse && self.userLocation != nil;
 }
 
 #pragma mark - CLLocationManagerDelegate
@@ -104,14 +108,21 @@
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
-    NSAssert(self.locationCompletion != nil, @"locationCompletion cannot be nil");
     NSLog(@"Failed to get location %@", [error description]);
     
     if (self.gettingPermission) {
         return;
     }
     
-    self.locationCompletion(NO, @"Something went wrong trying to get your location. Perhaps you are in an area with low signal. Please retry by pressing the current location button on the map.");
+    if (!self.userLocation && self.locationCompletion != nil) {
+        
+        if ([[NSDate date] timeIntervalSinceDate:self.locationWarningExpiration] < 60.0) {
+            return;
+        }
+        
+        self.locationWarningExpiration = [NSDate date];
+        self.locationCompletion(NO, @"Something went wrong trying to get your location. Perhaps you are in an area with low signal. Please retry by pressing the current location button on the map.");
+    }
 }
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
@@ -129,5 +140,6 @@
         self.gettingUpdates = YES;
     }
 }
+
 
 @end
