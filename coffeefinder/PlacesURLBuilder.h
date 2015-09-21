@@ -20,8 +20,20 @@ extern NSString * const kTypes;
 
 @interface PlacesURLBuilder : NSObject
 
+/**
+ *  The root URL of the Google places nearby search api endpoint
+ *
+ *  @return URL of the base api
+ */
 + (NSURL *)nearbyPlaces;
 
+/**
+ *  The full URL representing the coffee search for Google Places.
+ *
+ *  @param parameters A dictionary of required parameters, such as location and api key to pass to google
+ *
+ *  @return an NSURL fully formatted with the parameters passed.
+ */
 + (NSURL *)nearbyPlacesURLWithParams:(NSDictionary *)parameters;
 
 @end

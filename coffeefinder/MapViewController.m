@@ -14,9 +14,21 @@
 
 @interface MapViewController () <MKMapViewDelegate>
 
+/**
+ *  Main MKMapView object for displaying coffee annotations
+ */
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+/**
+ * Allows the user to recenter and requery the map at their location.
+ */
 @property (weak, nonatomic) IBOutlet UIButton *locationButton;
+/**
+ *  Handles interactions between the view controller and the PlacesService.
+ */
 @property (strong, nonatomic) MapViewModel *viewModel;
+/**
+ *  Indicates when to call off for coffee results the first time. Prevents changes in the map region from requerying.
+ */
 @property (assign, nonatomic) BOOL zooming;
 
 @end
@@ -99,23 +111,36 @@
 }
 
 #pragma mark - Actions
-
+/**
+ *  Handles the location button tap and forwards to loading methods.
+ *
+ *  @param sender location UIButton
+ */
 - (IBAction)locationButtonPressed:(id)sender {
     [self loadResults];
 }
 
 #pragma mark - Private Methods
 
+/**
+ *  Helper method to hand off with a default radius of 10 miles
+ */
 - (void)loadResults {
     [self loadResults:10];
 }
 
+/**
+ *  Calls off to the Places Service to search for coffee locations with the given radius. 
+ *  Removes previously added annotations and adjusts the map region based on the results.
+ *
+ *  @param radius to search
+ */
 - (void)loadResults:(NSUInteger)radius {
     if (self.viewModel.userLocation != nil) {
         __weak MapViewController *weakSelf = self;
         [self.viewModel searchNearbyCoffeeShops:self.viewModel.userLocation.coordinate radius:radius completion:^(NSArray *results, NSError *error) {
             if (error != nil) {
-                // TODO: deal with error
+                [[[UIAlertView alloc] initWithTitle:@"Something went wrong." message:@"Oops, we got an error trying to search for coffee shops. Please check back again later." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil] show];
             }
             else if(results.count > 0) {
                 NSArray *annotationsToRemove = [weakSelf.mapView.annotations filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id  _Nonnull evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {

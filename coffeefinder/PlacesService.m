@@ -62,7 +62,7 @@ static const double kMetersPerMile = 1609.34;
                             break;
                         case PlacesResultStatusOK: {
                             
-                            // filter out results outside of radisu
+                            // filter out results outside of radius
                             MKMapPoint centerPt = MKMapPointForCoordinate(center);
                             CLLocationDistance maxDistance = radius * 1609.34; // meters per mile
                             NSLog(@"maxDistance %f", maxDistance);

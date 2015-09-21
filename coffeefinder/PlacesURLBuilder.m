@@ -25,10 +25,6 @@ NSString * const kLocation = @"location";
     return @"https://maps.googleapis.com/maps/api/place/nearbysearch/json?";
 }
 
-+ (NSString *)radarSearch {
-    return @"https://maps.googleapis.com/maps/api/place/radarsearch/json?";
-}
-
 + (NSURL *)nearbyPlacesURLWithParams:(NSDictionary *)parameters {
     if (parameters[kKey] == nil || parameters[kLatitude] == nil || parameters[kLongitude] == nil) {
         return nil; // can't query without including all required parameters

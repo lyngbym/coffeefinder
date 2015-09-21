@@ -18,8 +18,20 @@ typedef NS_ENUM(NSInteger, PlacesResultStatus) {
 
 - (instancetype)init NS_UNAVAILABLE;
 
+/**
+ *  Converts a google nearby places search result into a set of data model objects.
+ *
+ *  @param response Google places result payload
+ *
+ *  @return new instance
+ */
 - (instancetype)initWithResponse:(NSDictionary *)response NS_DESIGNATED_INITIALIZER;
 
+/**
+ *  Parsers the response that was setup in the initializer.
+ *
+ *  @param completion Passes back an array of PlaceResult annotation objects or an error
+ */
 - (void)parse:(void(^)(PlacesResultStatus status, NSArray *results, NSError *error))completion;
 		
 @end
