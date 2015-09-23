@@ -13,6 +13,7 @@
 		931B6CCB1BABE97200969E6E /* results.json in Resources */ = {isa = PBXBuildFile; fileRef = 931B6CCA1BABE97200969E6E /* results.json */; };
 		931B6CCD1BABEC5700969E6E /* request_denied.json in Resources */ = {isa = PBXBuildFile; fileRef = 931B6CCC1BABEC5700969E6E /* request_denied.json */; };
 		931B6CCF1BABF0D500969E6E /* PlacesResultsParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 931B6CCE1BABF0D500969E6E /* PlacesResultsParserTests.m */; };
+		9320DC2D1BB2EF9E00CB0C89 /* Delano.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9320DC2C1BB2EF9E00CB0C89 /* Delano.gpx */; };
 		936C13F91BAB5DB500A3BA3A /* PlacesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 936C13F81BAB5DB500A3BA3A /* PlacesService.m */; };
 		936C13FC1BAB6F5200A3BA3A /* PlacesURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 936C13FB1BAB6F5200A3BA3A /* PlacesURLBuilder.m */; };
 		936C13FE1BAB71AA00A3BA3A /* PlacesURLBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 936C13FD1BAB71AA00A3BA3A /* PlacesURLBuilderTests.m */; };
@@ -49,6 +50,7 @@
 		931B6CCA1BABE97200969E6E /* results.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = results.json; sourceTree = "<group>"; };
 		931B6CCC1BABEC5700969E6E /* request_denied.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = request_denied.json; sourceTree = "<group>"; };
 		931B6CCE1BABF0D500969E6E /* PlacesResultsParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesResultsParserTests.m; sourceTree = "<group>"; };
+		9320DC2C1BB2EF9E00CB0C89 /* Delano.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Delano.gpx; sourceTree = "<group>"; };
 		934189B51BACA5FF0034E2DF /* Minneapolis.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Minneapolis.gpx; sourceTree = "<group>"; };
 		936C13F71BAB5DB500A3BA3A /* PlacesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesService.h; sourceTree = "<group>"; };
 		936C13F81BAB5DB500A3BA3A /* PlacesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesService.m; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				934189B51BACA5FF0034E2DF /* Minneapolis.gpx */,
+				9320DC2C1BB2EF9E00CB0C89 /* Delano.gpx */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			files = (
 				93CDC59A1BAB028700A64733 /* Assets.xcassets in Resources */,
 				93CDC5981BAB028700A64733 /* Main.storyboard in Resources */,
+				9320DC2D1BB2EF9E00CB0C89 /* Delano.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

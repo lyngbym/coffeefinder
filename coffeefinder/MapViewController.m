@@ -170,10 +170,11 @@
                 }
                 
                 MKCoordinateSpan span = MKCoordinateSpanMake(maxLat - minLat, maxLon - minLon);
-                CLLocationCoordinate2D center = CLLocationCoordinate2DMake((maxLat - span.latitudeDelta / 2.1), maxLon - span.longitudeDelta / 2.1);
+                CLLocationCoordinate2D center = CLLocationCoordinate2DMake((maxLat - span.latitudeDelta / 2), maxLon - span.longitudeDelta / 2);
                 
-                MKCoordinateRegion region = MKCoordinateRegionMake(center, span);
-                [weakSelf.mapView setRegion:region animated:YES];
+                MKCoordinateRegion region = MKCoordinateRegionMake(center, MKCoordinateSpanMake(span.latitudeDelta * 1.1, span.longitudeDelta * 1.1));
+                MKCoordinateRegion adjustedRegion = [self.mapView regionThatFits:region];
+                [weakSelf.mapView setRegion:adjustedRegion animated:YES];
                 
                 [weakSelf.mapView addAnnotations:results];
             }
